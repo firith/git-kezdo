@@ -106,3 +106,13 @@ Címkézés (pl programverzió), kommit azonosítására (checkout, diff)
   git tag # használt címkék listázása
   git tag -d cimke # címke törlése
 ```
+
+# Reset
+Nem kommitolt módosítás eldobása
+```
+  git reset --hard
+```
+Kommit törlése
+```
+  git reset --hard <hash>
+```
