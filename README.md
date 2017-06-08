@@ -91,6 +91,7 @@ Fájlok listája amit nem akarunk a verziókezelőben tárolni (pl konfig fájlo
 Commitok listázása
 ```
   git log
+  git log -p # lista diff-el
 ```
 
 ## Diff
