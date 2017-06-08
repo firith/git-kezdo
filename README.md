@@ -112,7 +112,7 @@ Nem kommitolt módosítás eldobása
 ```
   git reset --hard
 ```
-Kommit törlése
+Kommit törlése (utolsó kommit hash-t kell megadni, az előttelevőket törli)
 ```
   git reset --hard <hash>
 ```
