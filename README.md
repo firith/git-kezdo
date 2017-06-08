@@ -90,6 +90,7 @@ Változások megtekintése
   git diff
   git diff -w # whitespace karakterek figyelmen kívül hagyása
   git diff oldhash..newhash
+  git diff oldtag..newtag # tag is használható
 ```
 
 # Blame
@@ -99,4 +100,9 @@ File változások listázása
 ```
 
 # Tag
-Címkézés
+Címkézés (pl programverzió), kommit azonosítására (checkout, diff)
+```
+  git tag cimke #címke létrehozása
+  git tag # használt címkék listázása
+  git tag -d cimke # címke törlése
+```
