@@ -237,3 +237,21 @@ File egy részletének kommitolása
 * s szétdarabolja a módosítást
 * n kihagyá
 * y hozzáadás a staging area-hoz
+
+## Branch kezdőpontja
+```
+  git co -b <branchname> <commithash>
+```
+
+# Rebase
+Régi kommitok módosítása, módosítása, törlése (pusholt kommitoknál ne használjuk)
+
+```
+  git rebase -i <commithash> # -i interactive
+```
+
+* sor törlése: kommit törlése
+* sorrend változtatása: kommitok sorrendjének változtatása
+* pick: kommitot a rendszer használja
+* edit: kommitot a rendszer használja, de álljon meg a feldolgozás, hogy lehessen  (--amend), folytatás: git rebase --continue
+* squash: kommit összeolasztása az előző kommittal
