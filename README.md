@@ -102,7 +102,7 @@ File változások listázása
 # Tag
 Címkézés (pl programverzió), kommit azonosítására (checkout, diff)
 ```
-  git tag cimke #címke létrehozása
+  git tag cimke # címke létrehozása
   git tag # használt címkék listázása
   git tag -d cimke # címke törlése
 ```
