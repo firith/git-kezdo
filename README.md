@@ -1,0 +1,102 @@
+# Alapfogalmak
+
+## Kommit:
+Elemi egység, a fájlokról elmentett pillanatkép.
+Minél gyakrabban és minél kisebb logikailag összetartozó egységet kommitoljunk
+A kommitokank van gyereke és szülője.
+HEAD: utolsó kommit
+
+## Branch
+Kommitok egymásutáni sorozata
+(kommit pötty, branch vonal)
+master: automatikusan létrejön
+
+## Workspace
+Fejlesztésben használt fájlok, ezeken dolgozunk
+
+## Repository
+Metadatok tárolása (kommitok, branchek, címkék)
+
+# Installálás
+
+```
+apt-get install git-core git-doc git-gui gitk
+```
+
+# Help
+
+```
+git help
+```
+
+```
+git help commit
+```
+
+# Beállítások
+
+```
+git config --global user.name "Simon Balázs"
+git config --global user.email "balazs.simon@intren.hu"
+
+git config --global color.ui auto
+
+git config -l # lista
+```
+
+## Alias
+```
+  git config --global alias.co "checkout"
+  git config --global alias.st "status"
+```
+
+# Init
+Új git repository létrehozása
+```
+  git init
+```
+
+# Status
+Változások listázása
+```
+  git status
+```
+
+# Add, mv, rm
+File hozzáadása, áthelyezése, törlése
+```
+  git add
+  git mv
+  git rm
+```
+
+# Commit  
+Változások mentése
+```
+  git commit
+  git commit -m 'commit message'
+  git commit -a
+```
+
+# Log
+Commitok listázása
+```
+  git log
+```
+
+# Diff
+Változások megtekintése
+```
+  git diff
+  git diff -w # whitespace karakterek figyelmen kívül hagyása
+  git diff oldhash..newhash
+```
+
+# Blame
+File változások listázása
+```
+  git blame filename
+```
+
+# Tag
+Címkézés
