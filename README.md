@@ -160,6 +160,12 @@ Listázás
   git branch <branchname>
 ```
 
+Törlés
+```
+  git branch -d <branchname>
+  git branch -D <branchname> # nem mergelt branch törlése
+```
+
 # Checkout
 Branchek közötti váltás
 ```
