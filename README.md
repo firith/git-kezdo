@@ -77,6 +77,10 @@ Változások mentése
   git commit -m 'commit message'
   git commit -a
 ```
+Kimaradt változás hozzáadása az utolsó kommithoz vagy kommit message átírása
+```
+  git commit --amend
+```
 
 # Log
 Commitok listázása
