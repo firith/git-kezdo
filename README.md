@@ -148,3 +148,20 @@ Kommit eldobása
 ```
   git stash drop <azonosito> # azonosító nélkül az utolsó kommit
 ```
+
+# Branch
+Listázás
+```
+  git branch
+```
+
+Új branch létrehozása
+```
+  git branch <branchname>
+```
+
+# Checkout
+Branchek közötti váltás
+```
+  git checkout <branchname>
+```
