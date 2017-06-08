@@ -50,19 +50,21 @@ git config -l # lista
   git config --global alias.st "status"
 ```
 
-# Init
+# Alap parancsok
+
+## Init
 Új git repository létrehozása
 ```
   git init
 ```
 
-# Status
+## Status
 Változások listázása
 ```
   git status
 ```
 
-# Add, mv, rm
+## Add, mv, rm
 File hozzáadása, áthelyezése, törlése
 ```
   git add <filename>
@@ -70,7 +72,7 @@ File hozzáadása, áthelyezése, törlése
   git rm <filename>
 ```
 
-# Commit  
+## Commit  
 Változások mentése
 ```
   git commit
@@ -82,13 +84,13 @@ Kimaradt változás hozzáadása az utolsó kommithoz vagy kommit message átír
   git commit --amend
 ```
 
-# Log
+## Log
 Commitok listázása
 ```
   git log
 ```
 
-# Diff
+## Diff
 Változások megtekintése
 ```
   git diff
@@ -97,13 +99,13 @@ Változások megtekintése
   git diff <oldtag>..<newtag> # tag is használható
 ```
 
-# Blame
+## Blame
 File változások listázása
 ```
   git blame <filename>
 ```
 
-# Tag
+## Tag
 Címkézés (pl programverzió), kommit azonosítására (checkout, diff)
 ```
   git tag <cimke> # címke létrehozása
@@ -111,7 +113,7 @@ Címkézés (pl programverzió), kommit azonosítására (checkout, diff)
   git tag -d <cimke> # címke törlése
 ```
 
-# Reset
+## Reset
 Nem kommitolt módosítás eldobása
 ```
   git reset --hard
@@ -121,7 +123,7 @@ Kommit törlése (utolsó kommit hash-t kell megadni, az előttelevőket törli)
   git reset --hard <hash>
 ```
 
-# Stash
+## Stash
 Módosítás kommit nélküli mentése átmeneti tárolóba
 ```
   git stash save "message" # mentés
@@ -149,7 +151,7 @@ Kommit eldobása
   git stash drop <azonosito> # azonosító nélkül az utolsó kommit
 ```
 
-# Branch
+## Branch
 Listázás
 ```
   git branch
@@ -171,14 +173,14 @@ Törlés
   git branch -D <branchname> # nem mergelt branch törlése
 ```
 
-# Checkout
+## Checkout
 Branchek közötti váltás
 ```
   git checkout <branchname>
   git checkout -b <branchname> # új branch létrehozása és abba átállás
 ```
 
-# Merge
+## Merge
 Branchek összeolvasztása
 ```
   git merge <branchname>
