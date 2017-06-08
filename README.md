@@ -84,6 +84,9 @@ Kimaradt változás hozzáadása az utolsó kommithoz vagy kommit message átír
   git commit --amend
 ```
 
+## .gitgnore
+Fájlok listája amit nem akarunk a verziókezelőben tárolni (pl konfig fájlok)
+
 ## Log
 Commitok listázása
 ```
