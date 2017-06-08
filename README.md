@@ -185,3 +185,12 @@ Branchek összeolvasztása
 ```
   git merge <branchname>
 ```
+
+
+# További parancsok
+
+## fsck
+Repository metaadatainak ellenőrzése
+```
+  git fsck
+```
