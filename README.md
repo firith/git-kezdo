@@ -165,3 +165,9 @@ Branchek közötti váltás
 ```
   git checkout <branchname>
 ```
+
+# Merge
+Branchek összeolvasztása
+```
+  git merge <branchname>
+```
