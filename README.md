@@ -30,7 +30,7 @@ git help
 ```
 
 ```
-git help commit
+git help <parancs> # pl git help commit
 ```
 
 # Beállítások
@@ -65,9 +65,9 @@ Változások listázása
 # Add, mv, rm
 File hozzáadása, áthelyezése, törlése
 ```
-  git add
-  git mv
-  git rm
+  git add <filename>
+  git mv <oldfilename> <newfilename>
+  git rm <filename>
 ```
 
 # Commit  
@@ -89,22 +89,22 @@ Változások megtekintése
 ```
   git diff
   git diff -w # whitespace karakterek figyelmen kívül hagyása
-  git diff oldhash..newhash
-  git diff oldtag..newtag # tag is használható
+  git diff <oldhash>..<newhash>
+  git diff <oldtag>..<newtag> # tag is használható
 ```
 
 # Blame
 File változások listázása
 ```
-  git blame filename
+  git blame <filename>
 ```
 
 # Tag
 Címkézés (pl programverzió), kommit azonosítására (checkout, diff)
 ```
-  git tag cimke # címke létrehozása
+  git tag <cimke> # címke létrehozása
   git tag # használt címkék listázása
-  git tag -d cimke # címke törlése
+  git tag -d <cimke> # címke törlése
 ```
 
 # Reset
