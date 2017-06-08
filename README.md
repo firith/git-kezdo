@@ -213,7 +213,7 @@ Kommitok elérési útvonala (git help rev-parse)
 ## Cherry-pick
 Kommit másolása másik branchből (csak kicsi, hibajavító kommitot másoljunk!)
 ```
-  git cherry-pick <commitazonosító>
+  git cherry-pick <commithash>
 ```
 
 ## Staging area
