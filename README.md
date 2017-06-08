@@ -160,6 +160,11 @@ Listázás
   git branch <branchname>
 ```
 
+Branch átnevezése
+```
+  git branch -m <oldbranchname> <newbranchname>
+```
+
 Törlés
 ```
   git branch -d <branchname>
