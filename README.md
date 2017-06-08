@@ -77,7 +77,7 @@ Változások mentése
 ```
   git commit
   git commit -m 'commit message'
-  git commit -a
+  git commit -a # staging area kihagyása
 ```
 Kimaradt változás hozzáadása az utolsó kommithoz vagy kommit message átírása
 ```
@@ -209,3 +209,25 @@ Felesleges metaadatok törlése
 Kommitok elérési útvonala (git help rev-parse)
 ~ - kommit szülője függőleges irányban
 ^ - kommit szülője vízszintes irányban
+
+## Staging area
+Workspace és a repository között elhelyezkedő tároló.
+* git add-al lehet hozzáadni
+* git commit innen kommitolja a változást
+* git commit -a kihagyja a staging area-t
+
+## git reset
+Változás törlése a staging area-ból (a változás nem törlődik)
+```
+  git reset
+```
+
+## add -p
+File egy részletének kommitolása
+```
+  git add -p
+```
+* ? súgó
+* s szétdarabolja a módosítást
+* n kihagyá
+* y hozzáadás a staging area-hoz
