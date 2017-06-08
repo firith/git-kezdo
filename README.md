@@ -200,3 +200,7 @@ Felesleges metaadatok törlése
 ```
   git gc
 ```
+
+## ~ ^
+~ - kommit szülője függőleges irányban
+^ - kommit szülője vízszintes irányban
