@@ -194,3 +194,9 @@ Repository metaadatainak ellenőrzése
 ```
   git fsck
 ```
+
+## gc
+Felesleges metaadatok törlése
+```
+  git gc
+```
