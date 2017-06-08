@@ -202,5 +202,6 @@ Felesleges metaadatok törlése
 ```
 
 ## ~ ^
+Kommitok elérési útvonala (git help rev-parse)
 ~ - kommit szülője függőleges irányban
 ^ - kommit szülője vízszintes irányban
