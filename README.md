@@ -210,6 +210,12 @@ Kommitok elérési útvonala (git help rev-parse)
 ~ - kommit szülője függőleges irányban
 ^ - kommit szülője vízszintes irányban
 
+## Cherry-pick
+Kommit másolása másik branchből (csak kicsi, hibajavító kommitot másoljunk!)
+```
+  git cherry-pick <commitazonosító>
+```
+
 ## Staging area
 Workspace és a repository között elhelyezkedő tároló.
 * git add-al lehet hozzáadni
