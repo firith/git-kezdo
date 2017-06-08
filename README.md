@@ -120,3 +120,31 @@ Kommit törlése (utolsó kommit hash-t kell megadni, az előttelevőket törli)
 ```
   git reset --hard <hash>
 ```
+
+# Stash
+Módosítás kommit nélküli mentése átmeneti tárolóba
+```
+  git stash save "message" # mentés
+```
+
+Stash kommitok megtekintése
+```
+  git stash list # stash commitok listázása
+  git stash show <stash@\{0\}> # commit megtekintése, a kapcsos zárójeleket escape-elni kell!
+  git stash show -p <stash@\{0\}> # commit megtekintése diff-el
+```
+
+Változások újraalkalmazása, stash törlése nélkül
+```
+  git stash apply <azonosito> # azonosító nélkül az utolsó kommit
+```
+
+Változások újraalkalmazása, stash törlésével
+```
+  git stash pop <azonosito> # azonosító nélkül az utolsó kommit
+```
+
+Kommit eldobása
+```
+  git stash drop <azonosito> # azonosító nélkül az utolsó kommit
+```
