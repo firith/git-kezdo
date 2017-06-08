@@ -164,6 +164,7 @@ Listázás
 Branchek közötti váltás
 ```
   git checkout <branchname>
+  git checkout -b <branchname> # új branch létrehozása és abba átállás
 ```
 
 # Merge
