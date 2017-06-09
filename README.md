@@ -235,7 +235,7 @@ File egy részletének kommitolása
 ```
 * ? súgó
 * s szétdarabolja a módosítást
-* n kihagyá
+* n kihagyja a módosítást
 * y hozzáadás a staging area-hoz
 
 ## Branch kezdőpontja
