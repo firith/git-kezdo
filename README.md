@@ -27,9 +27,6 @@ apt-get install git-core git-doc git-gui gitk
 
 ```
 git help
-```
-
-```
 git help <parancs> # pl git help commit
 ```
 
@@ -38,50 +35,56 @@ git help <parancs> # pl git help commit
 ```
 git config --global user.name "Simon Balázs"
 git config --global user.email "balazs.simon@intren.hu"
+```
 
-git config --global color.ui auto
-
+```
 git config -l # lista
 ```
 
 ## Alias
 ```
-  git config --global alias.co "checkout"
-  git config --global alias.st "status"
+git config --global alias.co "checkout"
+git config --global alias.st "status"
 ```
 
 # Alap parancsok
 
 ## Init
 Új git repository létrehozása
+
 ```
-  git init
+git init
 ```
 
 ## Status
 Változások listázása
+
 ```
-  git status
+git status
 ```
 
 ## Add, mv, rm
 File hozzáadása, áthelyezése, törlése
+
 ```
-  git add <filename>
-  git mv <oldfilename> <newfilename>
-  git rm <filename>
+git add <filename>
+git mv <oldfilename> <newfilename>
+git rm <filename>
 ```
 
 ## Commit  
 Változások mentése
+
 ```
-  git commit
-  git commit -m 'commit message'
-  git commit -a # staging area kihagyása
+git commit
+git commit -m 'commit message'
+git commit -a # staging area kihagyása
 ```
+
 Kimaradt változás hozzáadása az utolsó kommithoz vagy kommit message átírása
+
 ```
-  git commit --amend
+git commit --amend
 ```
 
 ## .gitgnore
@@ -89,105 +92,123 @@ Fájlok listája amit nem akarunk a verziókezelőben tárolni (pl konfig fájlo
 
 ## Log
 Commitok listázása
+
 ```
-  git log
-  git log -p # lista diff-el
+git log
+git log -p # lista diff-el
 ```
 
 ## Diff
 Változások megtekintése
+
 ```
-  git diff
-  git diff -w # whitespace karakterek figyelmen kívül hagyása
-  git diff <oldhash>..<newhash>
-  git diff <oldtag>..<newtag> # tag is használható
+git diff
+git diff -w # whitespace karakterek figyelmen kívül hagyása
+git diff <oldhash>..<newhash>
+git diff <oldtag>..<newtag> # tag is használható
 ```
 
 ## Blame
 File változások listázása
+
 ```
-  git blame <filename>
+git blame <filename>
 ```
 
 ## Tag
 Címkézés (pl programverzió), kommit azonosítására (checkout, diff)
+
 ```
-  git tag <cimke> # címke létrehozása
-  git tag # használt címkék listázása
-  git tag -d <cimke> # címke törlése
+git tag <cimke> # címke létrehozása
+git tag # használt címkék listázása
+git tag -d <cimke> # címke törlése
 ```
 
 ## Reset
-Nem kommitolt módosítás eldobása
+###Nem kommitolt módosítás eldobása
+
 ```
-  git reset --hard
+git reset --hard
 ```
-Kommit törlése (utolsó kommit hash-t kell megadni, az előttelevőket törli)
+
+### Kommit törlése (utolsó kommit hash-t kell megadni, az előttelevőket törli)
+
 ```
-  git reset --hard <hash>
+git reset --hard <hash>
 ```
 
 ## Stash
-Módosítás kommit nélküli mentése átmeneti tárolóba
+###Módosítás kommit nélküli mentése átmeneti tárolóba
+
 ```
-  git stash save "message" # mentés
+git stash save "message" # mentés
 ```
 
-Stash kommitok megtekintése
+### Stash kommitok megtekintése
+
 ```
-  git stash list # stash commitok listázása
-  git stash show <stash@\{0\}> # commit megtekintése, a kapcsos zárójeleket escape-elni kell!
-  git stash show -p <stash@\{0\}> # commit megtekintése diff-el
+git stash list # stash commitok listázása
+git stash show <stash@\{0\}> # commit megtekintése, a kapcsos zárójeleket escape-elni kell!
+git stash show -p <stash@\{0\}> # commit megtekintése diff-el
 ```
 
-Változások újraalkalmazása, stash törlése nélkül
+### Változások újraalkalmazása, stash törlése nélkül
+
 ```
-  git stash apply <azonosito> # azonosító nélkül az utolsó kommit
+git stash apply <azonosito> # azonosító nélkül az utolsó kommit
 ```
 
-Változások újraalkalmazása, stash törlésével
+### Változások újraalkalmazása, stash törlésével
+
 ```
-  git stash pop <azonosito> # azonosító nélkül az utolsó kommit
+git stash pop <azonosito> # azonosító nélkül az utolsó kommit
 ```
 
-Kommit eldobása
+### Kommit eldobása
+
 ```
-  git stash drop <azonosito> # azonosító nélkül az utolsó kommit
+git stash drop <azonosito> # azonosító nélkül az utolsó kommit
 ```
 
 ## Branch
-Listázás
+###Listázás
+
 ```
-  git branch
+git branch
 ```
 
-Új branch létrehozása
+### Új branch létrehozása
+
 ```
-  git branch <branchname>
+git branch <branchname>
 ```
 
-Branch átnevezése
+### Branch átnevezése
+
 ```
-  git branch -m <oldbranchname> <newbranchname>
+git branch -m <oldbranchname> <newbranchname>
 ```
 
-Törlés
+### Törlés
+
 ```
-  git branch -d <branchname>
-  git branch -D <branchname> # nem mergelt branch törlése
+git branch -d <branchname>
+git branch -D <branchname> # nem mergelt branch törlése
 ```
 
 ## Checkout
 Branchek közötti váltás
+
 ```
-  git checkout <branchname>
-  git checkout -b <branchname> # új branch létrehozása és abba átállás
+git checkout <branchname>
+git checkout -b <branchname> # új branch létrehozása és abba átállás
 ```
 
 ## Merge
 Branchek összeolvasztása
+
 ```
-  git merge <branchname>
+git merge <branchname>
 ```
 
 
@@ -195,14 +216,16 @@ Branchek összeolvasztása
 
 ## fsck
 Repository metaadatainak ellenőrzése
+
 ```
-  git fsck
+git fsck
 ```
 
 ## gc
 Felesleges metaadatok törlése
+
 ```
-  git gc
+git gc
 ```
 
 ## ~ ^
@@ -212,8 +235,9 @@ Kommitok elérési útvonala (git help rev-parse)
 
 ## Cherry-pick
 Kommit másolása másik branchből (csak kicsi, hibajavító kommitot másoljunk!)
+
 ```
-  git cherry-pick <commithash>
+git cherry-pick <commithash>
 ```
 
 ## Staging area
@@ -224,15 +248,18 @@ Workspace és a repository között elhelyezkedő tároló.
 
 ## git reset
 Változás törlése a staging area-ból (a változás nem törlődik)
+
 ```
-  git reset
+git reset
 ```
 
 ## add -p
 File egy részletének kommitolása
+
 ```
-  git add -p
+git add -p
 ```
+
 * ? súgó
 * s szétdarabolja a módosítást
 * n kihagyja a módosítást
@@ -240,14 +267,14 @@ File egy részletének kommitolása
 
 ## Branch kezdőpontja
 ```
-  git co -b <branchname> <commithash>
+git co -b <branchname> <commithash>
 ```
 
 # Rebase
 Régi kommitok módosítása, módosítása, törlése (pusholt kommitoknál ne használjuk)
 
 ```
-  git rebase -i <commithash> # -i interactive
+git rebase -i <commithash> # -i interactive
 ```
 
 * sor törlése: kommit törlése
@@ -262,34 +289,35 @@ Régi kommitok módosítása, módosítása, törlése (pusholt kommitoknál ne 
 Távoli repository-k listázása.
 
 ```
-	git remote
+git remote
 ```
 
 ## show
 Távoli repository adatainak megtekintése.
+
 ```
-	git remote show <name>
+git remote show <name>
 ```
 
 ## add
 Távoli repository hozzáadása a local repository-hoz. Az alapértelmezet távoli repository-t konvenció szerint _origin_ névvel szoktuk létrehozni.
 
 ```
-	git remote add <name> <url>
+git remote add <name> <url>
 ```
 
 ## remove
 Távoli repository kapcsolat törlése
 
 ```
-	git remote rm <name>
+git remote rm <name>
 ```
 
 ## rename
 Távoli repository kapcsolat nevének törlése
 
 ```
-	git remote rename <oldname> <newname>
+git remote rename <oldname> <newname>
 ```
 
 
@@ -297,5 +325,5 @@ Távoli repository kapcsolat nevének törlése
 Távoli repository lemásolása local gépre. Automatikusan hozzádódik a távoli repository _origin_ néven.
 
 ```
-	git clone <url>
+git clone <url>
 ```
