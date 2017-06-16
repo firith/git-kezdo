@@ -258,7 +258,7 @@ Régi kommitok módosítása, módosítása, törlése (pusholt kommitoknál ne 
 
 # Távoli repository
 
-# remote
+## remote
 Távoli repository-k listázása.
 
 ```
