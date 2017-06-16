@@ -125,7 +125,7 @@ git tag -d <cimke> # címke törlése
 ```
 
 ## Reset
-###Nem kommitolt módosítás eldobása
+### Nem kommitolt módosítás eldobása
 
 ```
 git reset --hard
@@ -138,7 +138,7 @@ git reset --hard <hash>
 ```
 
 ## Stash
-###Módosítás kommit nélküli mentése átmeneti tárolóba
+### Módosítás kommit nélküli mentése átmeneti tárolóba
 
 ```
 git stash save "message" # mentés
@@ -171,7 +171,7 @@ git stash drop <azonosito> # azonosító nélkül az utolsó kommit
 ```
 
 ## Branch
-###Listázás
+### Listázás
 
 ```
 git branch
