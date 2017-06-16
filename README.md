@@ -255,3 +255,33 @@ Régi kommitok módosítása, módosítása, törlése (pusholt kommitoknál ne 
 * pick: kommitot a rendszer használja
 * edit: kommitot a rendszer használja, de álljon meg a feldolgozás, hogy lehessen  (--amend), folytatás: git rebase --continue
 * squash: kommit összeolasztása az előző kommittal
+
+# Távoli repository
+
+# remote
+Távoli repository-k listázása.
+
+```
+	git remote
+```
+
+## show
+Távoli repository adatainak megtekintése.
+```
+	git remote show <name>
+```
+
+## add
+Távoli repository hozzáadása a local repository-hoz. Az alapértelmezet távoli repository-t konvenció szerint _origin_ névvel szoktuk létrehozni.
+
+```
+	git remote add <name> <url>
+```
+
+
+## clone
+Távoli repository lemásolása local gépre. Automatikusan hozzádódik a távoli repository _origin_ néven.
+
+```
+	git clone <url>
+```
