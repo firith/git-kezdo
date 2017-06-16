@@ -111,6 +111,7 @@ git diff <oldtag>..<newtag> # tag is használható
 ## Blame
 File változások listázása
 
+
 ```
 git blame <filename>
 ```
@@ -326,4 +327,27 @@ Távoli repository lemásolása local gépre. Automatikusan hozzádódik a távo
 
 ```
 git clone <url>
+```
+
+## fetch
+Távoli repository változásainak letöltése
+
+```
+git fetch <remotename> <branchname>
+```
+
+A letöltött változásokat nem mergeli bele a local branchbe, kézzel kell mergelni
+
+## pull
+Távoli repository változásainak letöltése és mergelése
+
+```
+git pull <remotename> <branchname>
+```
+
+## push
+Lokális változások feltöltése távoli repository-ba
+
+```
+git push <remotename> <branchname>
 ```
