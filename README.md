@@ -278,6 +278,20 @@ Távoli repository hozzáadása a local repository-hoz. Az alapértelmezet távo
 	git remote add <name> <url>
 ```
 
+## remove
+Távoli repository kapcsolat törlése
+
+```
+	git remote rm <name>
+```
+
+## rename
+Távoli repository kapcsolat nevének törlése
+
+```
+	git remote rename <oldname> <newname>
+```
+
 
 ## clone
 Távoli repository lemásolása local gépre. Automatikusan hozzádódik a távoli repository _origin_ néven.
