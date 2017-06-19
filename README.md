@@ -139,7 +139,7 @@ git reset --hard <hash>
 ```
 
 ## Stash
-### Módosítás kommit nélküli mentése átmeneti tárolóba
+### Módosítás mentése átmeneti tárolóba
 
 ```
 git stash save "message" # mentés
